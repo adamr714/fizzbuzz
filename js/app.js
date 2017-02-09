@@ -3,6 +3,8 @@ $(document).ready(function(){
   $('#number-chooser').on("submit",function() {
     var choice = $("#number-choice").val();
     fizzBuzz(choice);
+    event.preventDefault();
+
   });
 });
 
